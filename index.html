@@ -503,22 +503,34 @@
       #Todo
     </p>
   </section>
-
-  <section id="Future Work">
-    <h2>Future Work</h2>
-    <p>
-      When working on this project, some small flaws we ran into that we would either like to add or enhance are as
+  <section id="Future Work"
+    style="background-color: #f9f9f9; padding: 40px 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin: 40px auto; max-width: 900px;">
+    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">Future Work</h2>
+    <p style="font-size: 17px; color: #333; line-height: 1.6;">
+      When working on this project, some small flaws we ran into that we would either like to address or improve are as
       follows:
-      <br />
-      1. Centering the projector to the sandbox. When starting our program from boot through bashrc, we noticed that it
-      had some sideeffects on the spawning of our window where it made it not centered as we had originally made it.
-      This fully made it so the projection on the sand was shifted a tiny bit up and to the right as opposed to what we
-      had expected. This could be solved by unscrewing the projector and moving it back into place that works with the
-      boot from bashrc.
-      <br />
-      2. Adding touchscreen buttons: Our project is making usage of the PiTFT mounted on the Raspberry Pi 4.
     </p>
+    <ol style="text-align: left; padding-left: 20px; font-size: 16px; color: #444; line-height: 1.7;">
+      <li>
+        <span style="font-weight: bold; text-decoration: underline;">Centering the projector to the sandbox</span>:
+        Starting our program from boot via <code>.bashrc</code> had side effects that caused the window to spawn
+        off-center. This slightly shifted the projection upward and to the right. We could fix this by physically
+        adjusting the projector mount.
+      </li>
+      <li>
+        <span style="font-weight: bold; text-decoration: underline;">Adding touchscreen buttons</span>: Initially, we
+        couldn't use the PiTFT with our Lab 4 kernel, which lacked Pygame support. After switching to the Lab 3 kernel,
+        the TFT worked, but due to time constraints, we used GPIO buttons instead of touchscreen GUI buttons. Adding a
+        touchscreen interface would improve usability.
+      </li>
+      <li>
+        <span style="font-weight: bold; text-decoration: underline;">Deeper color mapping</span>: We implemented a color
+        range from red to blue, but additional enhancements could include gradient rings for more distinct terrain lines
+        and a richer color palette.
+      </li>
+    </ol>
   </section>
+
 
   <section id="Budget">
     <h2>Budget</h2>
