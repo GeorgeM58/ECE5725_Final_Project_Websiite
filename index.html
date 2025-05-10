@@ -344,6 +344,7 @@
     <p>
       The system software is implemented using a combination of C and Python, leveraging the strengths of each language:
     </p>
+    <br />
     <p>
       C Code: Handles all performance-critical tasks such as depth data acquisition and color mapping. This choice was
       made to improve real-time responsiveness given the Raspberry Pi’s limited processing power. We used the
@@ -351,6 +352,7 @@
       library to utilize all four cores on the Pi and get the depth data from the Kinect efficiently. This allowed for
       the real time performance that is seen in our demo.
     </p>
+    <br />
     <p>
       Python Script: Manages GPIO input and user interaction. A Python loop listens for GPIO button presses and controls
       the lifecycle of the C-based visualization subprocess.
@@ -387,8 +389,10 @@
       Projection alignment was a key part of the design process.
       Our sandbox has a square shape, while the camera feed and image output are rectangular.
       When booting from the Pi, we had to manually adjust the height and angle of the projector to ensure that the
-      projected image correctly covered
-      the sandbox area.
+      projected image correctly covered the sandbox area.
+    </p>
+    <br />
+    <p>
       However, when running it from our computers, we could provide a digital offset to ensure accurate rendering.
       The depth range was also calibrated to match the typical height variations achievable within the sandbox.
     </p>
@@ -398,10 +402,12 @@
     <p>
       Given the limited computational resources of the Raspberry Pi, we prioritized efficiency:
     </p>
+    <br />
     <p>
       All computationally intensive tasks, especially per-frame depth processing and color mapping, were implemented in
       C.
     </p>
+    <br />
     <p>
       Python was used only where performance was not critical (GPIO control).
     </p>
@@ -415,12 +421,14 @@
       that were necessary for high performance. As a result, the Lab 3 kernel had files that
       enhanced our performance.
     </p>
+    <br />
     <p>
       Projection Alignment:
       On the computer, we could just set an offset to accurately map onto the sandbox. However, when booting from
       the Raspberry Pi, we had to make physical adjustments to the
       projector in order to try to align our projection to the sand without having an offset.
     </p>
+    <br />
     <p>
       GPIO Responsiveness:
       Handling button presses with Python's GPIO library worked reliably after implementing and
@@ -448,6 +456,7 @@
       projection alignment. However, when booting from the Pi we
       had to make manual adjustments to try to improve its accuracy.
     </p>
+    <br />
     <h4>User Interaction and Engagement</h4>
     <p>
       Users were able to engage with our project by actively shaping the
@@ -455,6 +464,7 @@
       They were able to observe immediate changes in the projected map
       that reflected the changes that they had created in the sand.
     </p>
+    <br />
     <h4>Challenges Encountered</h4>
     <p>
       We faced several difficult challenges. Primarily amongst it was
@@ -463,6 +473,7 @@
       Lastly, attempting to calibrate the projector as well as building
       the physical sandbox were additional challenges we had to overcome.
     </p>
+    <br />
     <h4>Summary</h4>
     <p>
       Overall, you can see the results of our project shared below
